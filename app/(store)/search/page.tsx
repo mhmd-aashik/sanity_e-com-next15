@@ -33,6 +33,7 @@ const SearchPage = async ({
         <h1 className="text-3xl font-bold mb-6 text-center">
           Search results for {query}
         </h1>
+        <ProductGrid products={products} />
       </div>
     </div>
   );
