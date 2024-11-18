@@ -8,7 +8,10 @@ import Loader from "@/components/shared/Loader";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import AddToBasketButton from "@/components/product/AddToBasketButton";
-import { Metadata } from "@/lib/actions/createCheckOutSession";
+import {
+  createCheckOutSession,
+  Metadata,
+} from "@/lib/actions/createCheckOutSession";
 
 const BasketPage = () => {
   const groupedItems = useBasketStore((state) => state.getGroupedItems());
