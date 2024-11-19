@@ -1,4 +1,5 @@
 "use client";
+
 import {
   ClerkLoaded,
   SignedIn,
@@ -29,8 +30,8 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-wrap sticky top-0 z-50 justify-between items-center px-4 py-2">
-      <div className="flex w-full flex-wrap justify-between items-center">
+    <header className="flex flex-wrap justify-between items-center px-4 py-2">
+      <div className="flex w-full flex-wrap  justify-between items-center">
         <Link
           href="/"
           className="
@@ -100,11 +101,16 @@ const Header = () => {
 
                 <div className="hidden sm:block text-xs">
                   <p className="text-gray-400">Welcome Back</p>
-                  <p className="font-bold">{user.fullName}!</p>
+                  <p className="font-bold text-blue-500">{user.fullName}!</p>
                 </div>
               </div>
             ) : (
-              <SignInButton mode="modal" />
+              // <SignInButton mode="modal" />
+              <SignInButton>
+                <button className="bg-white hover:bg-blue-700 hover:text-white text-blue-500 font-bold py-2 px-4 rounded border-blue-300 border">
+                  Sign In
+                </button>
+              </SignInButton>
             )}
 
             {user?.passkeys.length === 0 && (

@@ -27,7 +27,9 @@ export default async function RootLayout({
               <VisualEditing />
             </>
           )}
-          <Header />
+          <div className="bg-black p-4 sticky top-0 z-50">
+            <Header />
+          </div>
           {children}
           <SanityLive />
         </body>

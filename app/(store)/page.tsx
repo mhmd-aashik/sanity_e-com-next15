@@ -4,6 +4,7 @@ import { getAllCategories } from "@/sanity/lib/products/getAllCategories";
 import { getAllProducts } from "@/sanity/lib/products/getAllProducts";
 
 export const dynamic = "force-static";
+export const experimental_ppr = true;
 export const revalidate = 0;
 
 export default async function Home() {
