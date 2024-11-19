@@ -106,7 +106,7 @@ const Header = () => {
               </div>
             ) : (
               // <SignInButton mode="modal" />
-              <SignInButton>
+              <SignInButton mode="modal">
                 <button className="bg-white hover:bg-blue-700 hover:text-white text-blue-500 font-bold py-2 px-4 rounded border-blue-300 border">
                   Sign In
                 </button>
