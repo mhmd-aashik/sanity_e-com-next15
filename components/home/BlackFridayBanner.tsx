@@ -3,7 +3,7 @@ import { getActiveSaleByCouponCode } from "@/sanity/lib/sales/getActiveSaleByCou
 import React from "react";
 
 const BlackFridayBanner = async () => {
-  const sale = await getActiveSaleByCouponCode(COUPON_CODES.BFRIDAY);
+  const sale = await getActiveSaleByCouponCode(COUPON_CODES.DEC2024);
 
   if (!sale?.isActive) {
     return null;
